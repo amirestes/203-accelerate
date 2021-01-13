@@ -2,11 +2,6 @@
 /**
  * The template for displaying About pages
  *
- * This is the template that displays About pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 2.0
@@ -14,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content sidebar">
+	<div id="primary" class="site-content sidebar about">
 		<div class="home-page" role="main">
 			<p class="about-image">Accelerate is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.</p>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -39,7 +34,7 @@ get_header(); ?>
 				<?php query_posts('posts_per_page=4&post_type=services'); ?>
 				<?php while ( have_posts() ) : the_post();
 					$service_icon = get_field("service_icon");
-					$size = "medium";
+					$size = "small";
 				?>
 
 				<li class="individual-services">
