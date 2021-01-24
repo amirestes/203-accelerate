@@ -31,25 +31,26 @@ function create_custom_post_types() {
 
 		)
 		);
-	register_post_type( 'services',
+	register_post_type( 'services' ,
 		array(
 			'labels' => array(
 				'name' => __( 'Services' ),
-				'singular_name' => __( 'Service' )
+				'singular_name' => __( 'Service'
+				)
 			),
 			'public' => true,
 			/*'slug' => 'about'*/
 		)
+	
 		);
 }
 
 add_action( 'init', 'create_custom_post_types' );
 
 function accelerate_child_body_classes( $classes ) {
-	if ( is_page( 'contact-us' ) ) {
-		$classes[] = 'contact-us';
+	if (is_page('contact') ) {
+	  $classes[] = 'contact';
 	}
-
-	return $classes;
-}
-add_filter( 'body_class', 'accelerate_child_body_classes' );
+	  return $classes;
+  }
+  add_filter( 'body_class','accelerate_child_body_classes' );
