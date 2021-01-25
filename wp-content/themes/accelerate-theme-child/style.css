@@ -25,6 +25,10 @@ Text Domain:  accelerate-theme-child
 	color: white;
 	padding: 5em 5em;
 }
+
+#our-services p {
+	color: red;
+}
 /*end of about page styling */
 
 #masthead {
