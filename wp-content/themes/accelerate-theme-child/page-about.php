@@ -28,7 +28,7 @@ get_header(); ?>
                     $size = "full";
                 ?>
                      <h4><?php echo $subheading ?></h4>
-			        <p><?php echo $text ?></p>
+			         <p><?php echo $text ?></p>
 				<?php endwhile; //end of the loop ?>         
 </div>
 
@@ -50,6 +50,8 @@ get_header(); ?>
 				</figure>
 					<h3><a href="<?php the_permalink(); ?>" class="read-more=link">
 					<?php the_title(); ?></a></h3>
+					<p><?php echo $text ?></p>
+					
 			</li>
 				<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
