@@ -14,22 +14,6 @@ Text Domain:  accelerate-theme-child
 	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 	text-align: center;
 }
-/*About Page Styling */
-
-.about {
-	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-	text-align: center;
-}
-
-.about p {
-	color: white;
-	padding: 5em 5em;
-}
-
-#our-services p {
-	color: red;
-}
-/*end of about page styling */
 
 #masthead {
 	background: none repeat scroll 0 0 #45ac9d;
@@ -97,3 +81,93 @@ i {
 	border-radius: 50%;
 	padding: 3px;
 }
+
+/*About Page Styling */
+
+.about {
+	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	text-align: center;
+}
+
+.about p {
+	color: white;
+	padding: 5em 5em;
+}
+
+.our-services {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+}
+
+.about-content {
+	display: flex;
+	align-items: center;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 0;
+}
+
+li.about-services {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-basis: auto;
+}
+
+li.about-services:nth-child(even) {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: row-reverse;
+	flex-basis: auto;
+}
+
+.subheading {
+	padding-left: 25px;
+}
+.subheading:nth-child(even) {
+	padding-right: 25px;
+}
+.text {
+	padding-left: 25px;
+}
+.text:nth-child(even) {
+	padding-right: 25px;
+}
+.featured-work {
+	border-bottom: 1px solid darkgray;
+	margin-bottom: 20px;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.contact-us-button {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.contact-us-button h2 {
+	margin: auto;
+	line-height: 1;
+	text-align: center;
+	padding: 10px;
+}
+
+/*
+.about-cta {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+/*end of about page styling */
