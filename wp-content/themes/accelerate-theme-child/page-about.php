@@ -39,7 +39,7 @@ get_header(); ?>
 					<figure class="icon"><?php echo  wp_get_attachment_image($icon, $size) ?></figure>
 					<div class="text">
 						<h3 class="subheading"><?php echo $subheading ?></h3>
-						<p class="text"><?php echo $text ?></p>
+						<p><?php echo $text ?></p>
 					</div>
 			</li>
 				<?php endwhile; ?>

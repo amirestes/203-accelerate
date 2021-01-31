@@ -133,9 +133,11 @@ li.about-services:nth-child(even) {
 }
 .text {
 	padding-left: 25px;
+	width: 65%;
 }
 .text:nth-child(even) {
 	padding-right: 25px;
+	width: 65%;
 }
 .featured-work {
 	border-bottom: 1px solid darkgray;
@@ -148,6 +150,7 @@ li.about-services:nth-child(even) {
 	justify-content: center;
 	margin-top: 20px;
 	padding: 20px;
+	width: 30%;
 }
 
 .contact-us-button {
